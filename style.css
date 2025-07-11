@@ -181,40 +181,37 @@ body {
 .blow-button:hover {
   background-color: #ff1493;
 }
-/* Responsive layout for mobile screens */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   body {
-    margin: 0;
-    padding: 10px;
     font-size: 16px;
+    padding: 10px;
+    overflow-x: hidden;
   }
 
   .container,
-  .page {
+  .page,
+  .poetry,
+  .text-box,
+  .message-box {
+    width: 100% !important;
     flex-direction: column !important;
-    align-items: center !important;
     text-align: center !important;
+    padding: 10px;
   }
 
   img {
-    max-width: 100% !important;
+    width: 100% !important;
     height: auto !important;
     display: block;
     margin: auto;
   }
 
-  .poetry,
-  .text-box,
-  .message-box {
-    width: 100% !important;
-    font-size: 18px !important;
-    padding: 10px !important;
-  }
-
   .next-button,
   button {
     font-size: 16px !important;
-    padding: 10px 20px !important;
-    margin-top: 20px !important;
+    padding: 12px 24px;
+    margin-top: 20px;
   }
 }
+
+
