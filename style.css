@@ -181,32 +181,40 @@ body {
 .blow-button:hover {
   background-color: #ff1493;
 }
-/* Make website responsive for mobile */
+/* Responsive layout for mobile screens */
 @media (max-width: 768px) {
   body {
+    margin: 0;
     padding: 10px;
     font-size: 16px;
   }
 
-  .container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  .container,
+  .page {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
   }
 
   img {
-    width: 100%;
-    height: auto;
+    max-width: 100% !important;
+    height: auto !important;
+    display: block;
+    margin: auto;
   }
 
-  .poetry {
-    width: 100%;
-    padding: 10px;
-    font-size: 18px;
+  .poetry,
+  .text-box,
+  .message-box {
+    width: 100% !important;
+    font-size: 18px !important;
+    padding: 10px !important;
   }
 
-  button, .next-button {
-    font-size: 16px;
-    padding: 10px 20px;
+  .next-button,
+  button {
+    font-size: 16px !important;
+    padding: 10px 20px !important;
+    margin-top: 20px !important;
   }
 }
