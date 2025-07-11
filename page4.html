@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday - Page 4</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('assets/talha-bg.jpg'); /* 🖼️ Replace with your actual background image name */
+      background-size: cover;
+      background-position: center;
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      color: white;
+    }
+
+    .cake {
+      margin-top: 100px;
+    }
+
+    .cake img {
+      width: 200px;
+      height: auto;
+    }
+
+    .btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: pink;
+      border: none;
+      border-radius: 10px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="cake">
+    <h2>🎂 Birthday Cake</h2>
+    <img src="assets/cake.gif" alt="Birthday Cake" />
+    <br />
+    <button class="btn" onclick="goToNextPage()">Blow the Candle</button>
+  </div>
+
+  <script>
+    function goToNextPage() {
+      window.location.href = "page5.html";
+    }
+  </script>
+</body>
+</html>

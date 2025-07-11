@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Love Journey</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('assets/couple.jpg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Segoe UI', cursive;
+      color: white;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .poetry {
+      margin-top: 100px;
+      font-size: 28px;
+      padding: 0 30px;
+      font-style: italic;
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 15px;
+      display: inline-block;
+    }
+
+    .btn {
+      margin-top: 40px;
+      padding: 12px 24px;
+      font-size: 18px;
+      background-color: pink;
+      color: black;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+
+    .emoji {
+      position: absolute;
+      font-size: 24px;
+      animation: fall 4s linear infinite;
+    }
+
+    @keyframes fall {
+      0% { transform: translateY(-100px); }
+      100% { transform: translateY(100vh); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="poetry">
+    <p>تم ملی تو لگا زندگی مل گئی،<br>
+    ہر لمحہ تیرا ساتھ میرے دل کو بہا لے گیا۔<br>
+    تمہاری ہنسی میری دنیا کو روشن کر گئی،<br>
+    تم میری ہو، اور ہمیشہ میری رہو گی... ❤️</p>
+  </div>
+
+  <br>
+  <button class="btn" onclick="replay()">🔁 Replay Our Love Journey</button>
+
+  <script>
+    // Kiss Emoji Rain
+    const emojis = ["💋", "💗", "💞", "❤️"];
+    for (let i = 0; i < 50; i++) {
+      let emoji = document.createElement("div");
+      emoji.classList.add("emoji");
+      emoji.style.left = Math.random() * 100 + "vw";
+      emoji.style.top = Math.random() * -100 + "px";
+      emoji.innerText = emojis[Math.floor(Math.random() * emojis.length)];
+      document.body.appendChild(emoji);
+    }
+
+    // Confetti Burst
+    function confettiBurst() {
+      for (let i = 0; i < 100; i++) {
+        let heart = document.createElement("div");
+        heart.innerText = "💖";
+        heart.style.position = "absolute";
+        heart.style.left = Math.random() * 100 + "vw";
+        heart.style.top = Math.random() * 100 + "vh";
+        heart.style.fontSize = "20px";
+        document.body.appendChild(heart);
+        setTimeout(() => heart.remove(), 2000);
+      }
+    }
+
+    window.onload = confettiBurst;
+
+    function replay() {
+      window.location.href = "page1.html";
+    }
+  </script>
+</body>
+</html>
