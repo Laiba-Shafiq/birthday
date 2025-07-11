@@ -1,21 +1,15 @@
-body {
+body.page1 {
   margin: 0;
   padding: 0;
-  font-family: 'Segoe UI', sans-serif;
-  direction: rtl;
-  width: 100vw;
-  height: 100vh;
-  overflow-x: hidden;
-  background-image: url('assets/bg-love.jpg'); /* ✅ Correct path */
+  background: url('assets/bg-love.jpg') no-repeat center center fixed;
   background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
+  height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  position: relative;
 }
-
 
 .right-text {
   position: absolute;
