@@ -181,3 +181,32 @@ body {
 .blow-button:hover {
   background-color: #ff1493;
 }
+/* Make website responsive for mobile */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .poetry {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+  }
+
+  button, .next-button {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}
