@@ -60,37 +60,16 @@
 
   <br>
   <button class="btn" onclick="replay()">🔁 Replay Our Love Journey</button>
+<script>
+  function replay() {
+    window.location.href = "page1.html";
+  }
+</script>
 
-  <script>
-    // Kiss Emoji Rain
-    const emojis = ["💋", "💗", "💞", "❤️"];
-    for (let i = 0; i < 50; i++) {
-      let emoji = document.createElement("div");
-      emoji.classList.add("emoji");
-      emoji.style.left = Math.random() * 100 + "vw";
-      emoji.style.top = Math.random() * -100 + "px";
-      emoji.innerText = emojis[Math.floor(Math.random() * emojis.length)];
-      document.body.appendChild(emoji);
-    }
+  
 
-    // Confetti Burst
-    function confettiBurst() {
-      for (let i = 0; i < 100; i++) {
-        let heart = document.createElement("div");
-        heart.innerText = "💖";
-        heart.style.position = "absolute";
-        heart.style.left = Math.random() * 100 + "vw";
-        heart.style.top = Math.random() * 100 + "vh";
-        heart.style.fontSize = "20px";
-        document.body.appendChild(heart);
-        setTimeout(() => heart.remove(), 2000);
-      }
-    }
-
-    window.onload = confettiBurst;
-
-    function replay() {
-      window.location.href = "page1.html";
+   
+  
     }
   </script>
 </body>
